@@ -1,3 +1,13 @@
+#new-grid-btn{
+    display: block;
+    margin: 1rem auto;
+}
+
+.radio-buttons{
+    width: fit-content;
+    margin: 1rem auto;
+}
+
 .grid-container{
     display: flex;
     flex-direction: column;
