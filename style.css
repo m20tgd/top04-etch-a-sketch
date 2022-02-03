@@ -1,11 +1,17 @@
-#new-grid-btn{
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+button{
     display: block;
-    margin: 1rem auto;
+    width: 5rem;
+    margin: .5rem;
 }
 
 .radio-buttons{
     width: fit-content;
-    margin: 1rem auto;
+    margin: .5rem auto;
 }
 
 .grid-container{

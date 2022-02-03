@@ -1,9 +1,12 @@
 //Create a variable to store the current mode
 //'b' = black, 'bg' = black gradual and 'm' = multicoloured
 let mode = 'b';
-//Assign button to variable and add evenet listener
-const button = document.querySelector('#new-grid-btn');
-button.addEventListener('click', newGrid);
+//Assign New Grid button to variable and add event listener
+const newGridButton = document.querySelector('#new-grid-btn');
+newGridButton.addEventListener('click', newGrid);
+//Assign Clear button to variable and add event listener
+const clearButton = document.querySelector('#clear-grid-btn');
+clearButton.addEventListener('click', clearGrid);
 //Assign radio buttons to a variable and add event listener
 const radioButtons = document.querySelectorAll("input[type='radio']");
 radioButtons.forEach(button => button.addEventListener('click', changeMode));
@@ -92,6 +95,15 @@ function newGrid(){
     else if (gridSize < 1) gridSize = 1;
     else if (gridSize > 100) gridSize = 100;
     createGrid(gridSize);
+}
+
+//Create a callback function to clear the grid when the 'Clear' button
+//is pressed
+function clearGrid(){
+    //Get NodeList of grid squares
+    const gridSqaures = document.querySelectorAll('.grid-square');
+    //Iterate through them all and set their backgrounds to white
+    gridSqaures.forEach(square => square.style.background = 'rgb(255, 255, 255)');
 }
 
 //Create a callback function to change the mode when the radio buttons are clicked
