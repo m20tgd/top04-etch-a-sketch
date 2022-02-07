@@ -14,19 +14,24 @@
 
 button{
     display: block;
+    background: yellow;
     border-radius: 3rem;
     width: 3rem;
+    height: 3rem;
     margin: .5rem;
 }
 
 .radio-buttons{
     width: fit-content;
+    color: yellow;
     margin: .5rem auto;
+    font-size: 1.5rem;
 }
 
 .grid-container{
     display: flex;
     flex-direction: column;
+    background: white;
     width: 80vmin;
     height: 80vmin;
     margin: 0 auto;
@@ -51,5 +56,4 @@ button{
     color: yellow;
     font-family: cursive;
     font-size: 25px;
-    /* font-weight: bold; */
 }
